@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Fripps Page</title>
-    <link>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/tags/</link>
+    <link>https://ppage.pilip.org/tags/</link>
     <description>Recent content in Tags on Fripps Page</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ppage.pilip.org/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

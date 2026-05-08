@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fripps Page</title>
-    <link>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/</link>
+    <link>https://ppage.pilip.org/</link>
     <description>Recent content on Fripps Page</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2026 00:39:28 +0200</lastBuildDate>
-    <atom:link href="http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ppage.pilip.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pippos Rate Spiel</title>
-      <link>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/posts/pipposratespiel/</link>
+      <link>https://ppage.pilip.org/posts/pipposratespiel/</link>
       <pubDate>Fri, 24 Apr 2026 00:39:28 +0200</pubDate>
-      <guid>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/posts/pipposratespiel/</guid>
-      <description>&lt;p&gt;Rate: was passiert in diesem moment?&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/posts/pipposratespiel/jump.jpeg&#34;&#xA;    alt=&#34;sprung zu schild&#34; width=&#34;800&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;div class=&#34;quiz&#34;&gt;&#xA;  &lt;p class=&#34;quiz-question&#34;&gt;was passiert&lt;/p&gt;&#xA;  &lt;div class=&#34;quiz-options&#34;&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt weck&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt auf die fresse und werde zum pakistani&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;springt hinauf und ihm geht der arsch auf&lt;/button&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;  .quiz-btn {&#xA;    display: block;&#xA;    margin: 8px 0;&#xA;    padding: 10px 20px;&#xA;    cursor: pointer;&#xA;    border: 2px solid #ccc;&#xA;    border-radius: 6px;&#xA;    background: white;&#xA;    font-size: 1rem;&#xA;    transition: background 0.2s;&#xA;  }&#xA;  .quiz-btn.wrong {&#xA;    background: #e74c3c;&#xA;    border-color: #c0392b;&#xA;    color: white;&#xA;  }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;p&gt;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;i_want_to_fly_away.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;bump_head.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_arround.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;s_man.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;aua.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_gummi.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;</description>
+      <guid>https://ppage.pilip.org/posts/pipposratespiel/</guid>
+      <description>&lt;p&gt;Rate: was passiert in diesem moment?&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/pipposratespiel/jump.jpeg&#34;&#xA;    alt=&#34;sprung zu schild&#34; width=&#34;800&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;div class=&#34;quiz&#34;&gt;&#xA;  &lt;p class=&#34;quiz-question&#34;&gt;was passiert&lt;/p&gt;&#xA;  &lt;div class=&#34;quiz-options&#34;&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt weck&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt auf die fresse und werde zum pakistani&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;springt hinauf und ihm geht der arsch auf&lt;/button&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;  .quiz-btn {&#xA;    display: block;&#xA;    margin: 8px 0;&#xA;    padding: 10px 20px;&#xA;    cursor: pointer;&#xA;    border: 2px solid #ccc;&#xA;    border-radius: 6px;&#xA;    background: white;&#xA;    font-size: 1rem;&#xA;    transition: background 0.2s;&#xA;  }&#xA;  .quiz-btn.wrong {&#xA;    background: #e74c3c;&#xA;    border-color: #c0392b;&#xA;    color: white;&#xA;  }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;p&gt;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;i_want_to_fly_away.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;bump_head.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_arround.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;s_man.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;aua.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_gummi.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Langeweile</title>
-      <link>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/posts/langeweile/</link>
+      <link>https://ppage.pilip.org/posts/langeweile/</link>
       <pubDate>Wed, 22 Apr 2026 17:39:56 +0200</pubDate>
-      <guid>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/posts/langeweile/</guid>
-      <description>&lt;p&gt;Mir ist langweilig!&lt;br&gt;&#xA;Langweilig ist mir.&lt;br&gt;&#xA;I packs garch, i kack in bach!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/posts/langeweile/inTasseSchauen.jpg&#34;&#xA;    alt=&#34;in tasse schauender Fripp&#34; width=&#34;800&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;so sehe ich mich jeden tag beim kaffe und wasser trinken in der tasse gespiegelt:&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+      <guid>https://ppage.pilip.org/posts/langeweile/</guid>
+      <description>&lt;p&gt;Mir ist langweilig!&lt;br&gt;&#xA;Langweilig ist mir.&lt;br&gt;&#xA;I packs garch, i kack in bach!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/langeweile/inTasseSchauen.jpg&#34;&#xA;    alt=&#34;in tasse schauender Fripp&#34; width=&#34;800&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;so sehe ich mich jeden tag beim kaffe und wasser trinken in der tasse gespiegelt:&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/about/</link>
+      <link>https://ppage.pilip.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://q4yxujftknk2hjtotsx5z9pz.178.105.95.88.sslip.io/about/</guid>
+      <guid>https://ppage.pilip.org/about/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a bit about me.&lt;/p&gt;</description>
     </item>
   </channel>
