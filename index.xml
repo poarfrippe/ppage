@@ -48,7 +48,7 @@
       <link>https://ppage.pilip.org/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://ppage.pilip.org/about/</guid>
-      <description>&lt;p&gt;Hoila i bins&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hoila i bins&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/about/ich_crop.JPG&#34;&#xA;    alt=&#34;seavas i bins&#34; width=&#34;100%&#34;&gt;&#xA;&lt;/figure&gt;</description>
     </item>
   </channel>
 </rss>
