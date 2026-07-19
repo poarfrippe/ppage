@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <div style="position: fixed; top: 0; left: 0; width: 100%; display: flex; justify-content: space-around; pointer-events: none; z-index: 999;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+  </div>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Trouble in the message center | Fripps Page</title>
+
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+
+	</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="logo" href="https://ppage.pilip.org/">
+      Fripps Page
+    </a>
+    <ul class="main-menu">
+      
+      <li>
+        <a href="/posts">Posts</a>
+      </li>
+      
+      <li>
+        <a href="/about">About</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<h1>Trouble in the message center</h1>
+
+<p>Es kommt schon zu wenig, lange kein Content mehr hier. Denke jedoch nicht, dass liegt an einem kreativen Burnout des Autors. Nein!</p>
+<p>Es gibt technische Probleme. Grrrr.</p>
+<p>Ich wollte nämlich solange mit dem nächsten Post warten, bis der E-Mail Newsletter einsatzbereit ist! Aber naja, ich habe Tage um Tage damit verbracht, bin aber bis jetzt noch nicht im Stande gewesen. Ihr wisst ja: Mit der Technik habe ich es nicht so… (Mein letzter technischer Job endete in einem Rauswurf. Im hohen Bogen.)</p>
+<p>Und ich glaube, genau für solche Momente hat Blur den folgenden Song hier produziert, der sich den Titel mit ausgerechnet diesem Blog Post hier teilt. Hört genau hin:
+<figure >
+<audio controls preload="metadata" style="width: 100%;">
+<source src="titmc.mp3" type="audio/mpeg">
+<figcaption>Blur-Trouble in the message center</figcaption>
+</audio>
+</figure>
+</p>
+<p>Nun denn: Woran hat es gelegen?
+Also ich habe hier meinen eigenen Server mit öffentlicher IP, von dem aus auch diese Webseite gesendet wird. Er steht in Deutschland, in Nürnberg. Oder Nürnberg. Ist ja auch egal jetzt. Und ich habe meine eigene Domain gekauft.
+Ich habe außerdem die Möglichkeit, DNS Records zu setzen.
+Also top Voraussetzungen, um seine eigenen E-Mails zu senden mit der Endung: pilip.org</p>
+<p>Oder?</p>
+<p>Das Problem ist, ich habe keine Ahnung, wie das alles funktioniert.
+Ich denke, ich müsste da einen SMTP Server up spinnen, ein Zertifikat generieren, irgendwie 3 DNS Records setzen und dann gehts los.
+Ich habe das dann auch versucht zu machen. Habe es aber nicht geschafft. Das Docker Image vom Mailserver hat irgendwie das Zertifikat nicht gefunden, obwohl ich doch alles richtig gemacht habe&hellip;</p>
+<p>Aber wie gesagt: Ich habe ja keine Ahnung, weil, wie noch weiter oben gesagt: Mit der Technik habe ich es nicht so.
+Vielleicht muss ich gar nicht meinen eigenen Mailserver starten? Ich möchte nur automatisch Mails versenden, und zwar mit einer eigenen E-Mail Adresse, die auf pilip.org endet.
+E-Mails empfangen ist mir nicht so wichtig gerade. Vielleicht kann ich das ja auch einfacher erreichen? Und vielleicht wäre das sogar besser, weil anscheinend werden so amateurhafte SMTP Server sowiso nicht ernst genommen in der echten Welt, und alle Mails, die von da kommen, landen SOFORT im Spam.</p>
+<p>Schau, du siehst: Ich bin verloren. Aber dennoch werde ich einen Weg finden!
+Meine Mails werden den Weg zu euch finden. Amen, das sag ich euch!</p>
+<p>Hier könnt ihr schon mal eure E-Mail eintragen, die wird in der Zwischenzeit dann einfach gespeichert, und sobald ich es geschafft habe, kriegt ihr eine Mail.</p>
+<form id="email-form">
+  <input type="email" id="email-input" placeholder="you@example.com" style="width: 80%" required>
+  <button type="submit" style="width: 15%">Subscribe</button>
+</form>
+<div id="email-status" class="email-status"></div>
+
+
+<script>
+document.getElementById('email-form').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const email = document.getElementById('email-input').value;
+  const status = document.getElementById('email-status');
+
+  status.classList.remove('show', 'success', 'error');
+
+  try {
+    const res = await fetch('/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email })
+    });
+    if (res.ok) {
+      status.textContent = 'Kloppet!';
+      tatus.classList.add('show', 'success');
+      e.target.reset();
+    } else {
+      status.textContent = 'Hmm... Hat nicht funktioniert. Gedulde dich, ich werde es schon fixen!';
+      status.classList.add('show', 'error');
+    }
+  } catch (err) {
+    status.textContent = 'Hmm... Hat nicht funktioniert. Gedulde dich, ich werde es schon fixen!';
+    status.classList.add('show', 'error');
+  }
+});
+</script>
+
+<style>
+.email-form {
+  display: flex;
+  gap: 0.5rem;
+}
+.email-form input {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.email-form button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.email-form button:hover {
+  background: #1d4ed8;
+}
+
+.email-status {
+  margin-top: 0.6rem;
+  padding: 0;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+.email-status.show {
+  padding: 0.7rem 1rem;
+  max-height: 100px;
+  opacity: 1;
+}
+.email-status.success {
+  background: #dcfce7;
+  color: #166534;
+  border: 1px solid #86efac;
+}
+.email-status.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+</style>
+
+
+
+</main>
+	
+<footer>
+	<p>&copy;2026 Fripps Page</p>
+  <div style="position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; pointer-events: none; z-index: 999;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+  </div>
+</footer>
+
+</body>
+</html>
+
