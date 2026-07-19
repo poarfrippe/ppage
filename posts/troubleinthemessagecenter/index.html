@@ -94,14 +94,14 @@ document.getElementById('email-form').addEventListener('submit', async function 
   status.classList.remove('show', 'success', 'error');
 
   try {
-    const res = await fetch('/subscribe', {
+    const res = await fetch('http://178.105.95.88:8765/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email })
     });
     if (res.ok) {
       status.textContent = 'Kloppet!';
-      tatus.classList.add('show', 'success');
+      status.classList.add('show', 'success');
       e.target.reset();
     } else {
       status.textContent = 'Hmm... Hat nicht funktioniert. Gedulde dich, ich werde es schon fixen!';
