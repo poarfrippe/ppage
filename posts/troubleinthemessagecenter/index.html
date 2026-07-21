@@ -94,7 +94,7 @@ document.getElementById('email-form').addEventListener('submit', async function 
   status.classList.remove('show', 'success', 'error');
 
   try {
-    const res = await fetch('http://178.105.95.88:8765/subscribe', {
+    const res = await fetch('/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email })
