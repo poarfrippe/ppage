@@ -6,8 +6,15 @@
     <description>Recent content on Fripps Page</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 20:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 00:00:00 +0200</lastBuildDate>
     <atom:link href="https://ppage.pilip.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>København Außenkorrespondent zu Diensten</title>
+      <link>https://ppage.pilip.org/posts/kbhkorespondence/</link>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0200</pubDate>
+      <guid>https://ppage.pilip.org/posts/kbhkorespondence/</guid>
+      <description>&lt;object data=&#34;kbhTheLetter.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34;&gt;&#xA;  &lt;p&gt;Here should be a embedded pdf viewer, but somthing went wrong &lt;a href=&#34;kbhTheLetter.pdf&#34;&gt;to the PDF!&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/object&gt;</description>
+    </item>
     <item>
       <title>Regen</title>
       <link>https://ppage.pilip.org/posts/regen/</link>
