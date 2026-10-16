@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <div style="position: fixed; top: 0; left: 0; width: 100%; display: flex; justify-content: space-around; pointer-events: none; z-index: 999;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto; transform: rotate(180deg);">
+  </div>
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Ich habe einen Virus (Endlich) | Fripps Page</title>
+
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+
+	</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <a class="logo" href="https://ppage.pilip.org/">
+      Fripps Page
+    </a>
+    <ul class="main-menu">
+      
+      <li>
+        <a href="/posts">Posts</a>
+      </li>
+      
+      <li>
+        <a href="/about">About</a>
+      </li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+<main class="content">
+
+
+<h1>Ich habe einen Virus (Endlich)</h1>
+
+<p>Nach jahrelangen rücksichtslosen Gebrauch jeglicher Art von Computern habe ich es nun endlich geschafft mir einen Virus einzufangen.</p>
+<p>Ja, genau der Computer, der euch diese Website zusendet, hat einen Virus. Gerade im Moment wo ich das hier schreibe, &ldquo;schläft&rdquo; er, weil ich alle prozesse die mir spanisch<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> vorgekommen sind, beendet habe. Die Files sind aber immer noch da und ich weiß Stand jetzt nicht wie der Virus genau gestartet wurde, er kann also jederzeit wieder ausbrechen. Bis zum gutem Schluss werde ich wahrscheinlich einen sauberen Rebuild des gesamten Betriebssystems machen müssen, um komplett safe zu sein. Darauf habe ich aber keine Lust, also vielleicht auch nicht. <br>
+Aber wie komme ich drauf, dass auf meinem Server ein Virus haust, fragt ihr euch? Naja ich wurde von meinem Serveranbieter komplett zugespammed mit Mails dass ich anscheinend teil von &lsquo;Abuse&rsquo; bin???</p>
+<figure><img src="/posts/gettinghacked/abuse.png"
+			alt="Abuse mails" width="100%"><figcaption>
+			<p>Hetzners abusive Mails</p>
+		</figcaption>
+</figure>
+
+<p>Also starte ich zusammen mit Herr Claude die Suche. <br>
+Und tatsächlich habe ich mir einen richtigen Klischee Virus eingefangen: <br>
+Seine Files befinden sich in versteckten Ordnern, Prozesse mit legit aussehenden Namen werden gestartet, und das alles versehen mit einem Cronjob, der alles regelmäßig neustartet. <br>
+Und was am grusligsten ist: Ein ewig langer String, in Base64 encoded (gibberish), beinhaltet ein kleines Programmlein, was einen Key in meine &lsquo;authorized_keys&rsquo; schreibt. Zum Glück nicht vom root user, aber trozdem scary.</p>
+<figure><img src="/posts/gettinghacked/jibber.png"
+			alt="gibberish" width="100%"><figcaption>
+			<p>sogenannte .configrc7/b/run Datei</p>
+		</figcaption>
+</figure>
+
+<p>Ich habe mir dann die Virus-Files angesehen und es stellt sich raus, mein Hacker war Spanier. Das anfängliche Gefühl, wo ich sagte, dass es mir etwas spanisch vorkomme, war also goldrichtig!</p>
+<p>Hier kliener Ausschnitt:
+<figure><img src="/posts/gettinghacked/spanisch.png"
+			alt="spanischer hacker code" width="100%"><figcaption>
+			<p>Und das ist der tatsächliche Code der in diesem Base64 Block encoded war (man achte auf die Kommentare)</p>
+		</figcaption>
+</figure>
+</p>
+<p>Bro was?
+&ldquo;B0tchZ na veia ehehe :P&rdquo; sagst du? <br>
+und &ldquo;Whee! Obfuscation!&rdquo;, und so lustige Smilys &ldquo;o_o&rdquo; <br>
+Das muss ja ein lustiger Zeitgenosse gewesen sein, der das geschrieben hat.</p>
+<p>Nun, aber was dieser Virus überhaupt macht, wäre auch spannend zu wissen, oder? Naja, genau weiß ich es auch nicht, wenns dich interessiert, ich sende ihn dir gerne rüber :) Whooops&hellip; Villeicht passiert das gerade wo du das hier liest&hellip; Nein, Spaaaß. <br>
+Kein Spaß <br>
+spaaß. <br>
+Kurz hatte ich dich!</p>
+<p>Nein, also so grob gesagt werden da von meinem Server aus ganz viele ssh connections attempted, und es sieht so aus, als würde er einfach versuchen das passwort zu guessen, um eben Zugriff auf einen anderen random (oder auch nicht random) PC zu kriegen.
+Aber genau weiß ich es nicht. Was ich weiß: Ich bin Teil von Cyber Abuse. Und das hört sich doch gut an, oder?</p>
+<p>Abschließend noch eine Sache: <br>
+Netterweise befindet sich in den Dateien die mir die Spanier auf meinen Compi gespielt haben, auch eine namens &ldquo;clean.sh&rdquo;.</p>
+<figure><img src="/posts/gettinghacked/clean.png"
+			alt="clean.sh" width="100%"><figcaption>
+			<p>Die angebliche clean.sh datei</p>
+		</figcaption>
+</figure>
+
+<p>Und auf den ersten Blick sieht sie auch recht legit aus&hellip; Ich meine, warum nicht? wenn man das Ding testen will, bevor man es an die Öffentlichkeit verteilt, dann ist es schon nützlich, ein Cleanup Script zu haben, das deinen Testcomputer wieder aufräumt. Und das haben sie mir jetzt halt mitgesendet. Warum nicht? <br>
+Soll ich es ausführen, oder glaubt ihr, es ist die endgültige verdammung? Die Klinge, die mich letztendlich am Herzen trifft und zur Stecke bringt?</p>
+<p>Wems besonders interessiert: es handelt sich um diesen Virus hier:  <a href="https://www.joesandbox.com/analysis/1914637/0/html" target="_blank" rel="noopener noreferrer">kthreadadd64↗</a>
+ und es gibt online auch die eine oder andere Analyse davon.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>wird noch wichtig ;)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+
+</main>
+	
+<footer>
+	<p>&copy;2026 Fripps Page</p>
+  <div style="position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: space-around; pointer-events: none; z-index: 999;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+    <img src=/animated_long_flame.gif alt="fire" style="height: 80px; width: auto;">
+  </div>
+</footer>
+
+</body>
+</html>
+

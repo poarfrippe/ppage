@@ -79,3 +79,31 @@ body {
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Inter', sans-serif;
 }
+
+/* FIGURE */
+
+figure {
+  border: 2px solid #000;   /* border around image + caption */
+  padding: 0;
+  margin: 1.5em 0;
+}
+
+figure img {
+  display: block;           /* removes the small gap under the image */
+  margin: 0;
+}
+
+figure figcaption {
+  margin: 0;
+  padding: 0.3em 0.6em;     /* small space around the caption */
+  font-size: 0.85em;        /* smaller than body text */
+  font-style: italic;       /* classic caption look */
+  line-height: 1.4;
+  text-align: center;       /* or left, if you prefer */
+  color: #555;              /* slightly muted */
+  border-top: 1px solid #000; /* optional: separates caption from image */
+}
+
+figure figcaption p {
+  margin: 0;                /* removes the default paragraph spacing */
+}

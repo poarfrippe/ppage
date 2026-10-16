@@ -1,75 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Fripps Page</title>
-    <link>https://ppage.pilip.org/posts/</link>
-    <description>Recent content in Posts on Fripps Page</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0200</lastBuildDate>
-    <atom:link href="https://ppage.pilip.org/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>København Außenkorrespondent zu Diensten</title>
-      <link>https://ppage.pilip.org/posts/kbhkorespondence/</link>
-      <pubDate>Sun, 20 Sep 2026 00:00:00 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/kbhkorespondence/</guid>
-      <description>&lt;object data=&#34;kbhTheLetter.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34;&gt;&#xA;  &lt;p&gt;Here should be a embedded pdf viewer, but somthing went wrong &lt;a href=&#34;kbhTheLetter.pdf&#34;&gt;to the PDF!&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/object&gt;&#xA;&#xA;&lt;p&gt;Gib mir deine Email Adresse :)&#xA;&lt;form id=&#34;email-form&#34;&gt;&#xA;  &lt;input type=&#34;email&#34; id=&#34;email-input&#34; placeholder=&#34;you@example.com&#34; style=&#34;width: 80%&#34; required&gt;&#xA;  &lt;button type=&#34;submit&#34; style=&#34;width: 15%&#34;&gt;Subscribe&lt;/button&gt;&#xA;&lt;/form&gt;&#xA;&lt;div id=&#34;email-status&#34; class=&#34;email-status&#34;&gt;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;script&gt;&#xA;document.getElementById(&#39;email-form&#39;).addEventListener(&#39;submit&#39;, async function (e) {&#xA;  e.preventDefault();&#xA;  const email = document.getElementById(&#39;email-input&#39;).value;&#xA;  const status = document.getElementById(&#39;email-status&#39;);&#xA;&#xA;  status.classList.remove(&#39;show&#39;, &#39;success&#39;, &#39;error&#39;);&#xA;&#xA;  try {&#xA;    const res = await fetch(&#39;/subscribe&#39;, {&#xA;      method: &#39;POST&#39;,&#xA;      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },&#xA;      body: JSON.stringify({ email })&#xA;    });&#xA;    if (res.ok) {&#xA;      status.textContent = &#39;Kloppet!&#39;;&#xA;      status.classList.add(&#39;show&#39;, &#39;success&#39;);&#xA;      e.target.reset();&#xA;    } else {&#xA;      status.textContent = &#39;Hmm... Hat nicht funktioniert. Ach weißt du was, schreib mir einen Brief!&#39;;&#xA;      status.classList.add(&#39;show&#39;, &#39;error&#39;);&#xA;    }&#xA;  } catch (err) {&#xA;    status.textContent = &#39;Hmm... Hat nicht funktioniert. Ach weißt du was, schreib mir einen Brief!&#39;;&#xA;    status.classList.add(&#39;show&#39;, &#39;error&#39;);&#xA;  }&#xA;});&#xA;&lt;/script&gt;&#xA;&#xA;&lt;style&gt;&#xA;.email-form {&#xA;  display: flex;&#xA;  gap: 0.5rem;&#xA;}&#xA;.email-form input {&#xA;  flex: 1;&#xA;  padding: 0.6rem 0.8rem;&#xA;  border: 1px solid #ccc;&#xA;  border-radius: 6px;&#xA;  font-size: 1rem;&#xA;}&#xA;.email-form button {&#xA;  padding: 0.6rem 1.2rem;&#xA;  border: none;&#xA;  border-radius: 6px;&#xA;  background: #2563eb;&#xA;  color: white;&#xA;  font-weight: 600;&#xA;  cursor: pointer;&#xA;}&#xA;.email-form button:hover {&#xA;  background: #1d4ed8;&#xA;}&#xA;&#xA;.email-status {&#xA;  margin-top: 0.6rem;&#xA;  padding: 0;&#xA;  border-radius: 6px;&#xA;  font-weight: 500;&#xA;  font-size: 0.95rem;&#xA;  max-height: 0;&#xA;  overflow: hidden;&#xA;  opacity: 0;&#xA;  transition: all 0.25s ease;&#xA;}&#xA;.email-status.show {&#xA;  padding: 0.7rem 1rem;&#xA;  max-height: 100px;&#xA;  opacity: 1;&#xA;}&#xA;.email-status.success {&#xA;  background: #dcfce7;&#xA;  color: #166534;&#xA;  border: 1px solid #86efac;&#xA;}&#xA;.email-status.error {&#xA;  background: #fee2e2;&#xA;  color: #991b1b;&#xA;  border: 1px solid #fca5a5;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Regen</title>
-      <link>https://ppage.pilip.org/posts/regen/</link>
-      <pubDate>Tue, 28 Jul 2026 20:00:00 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/regen/</guid>
-      <description>&lt;h4 id=&#34;achtung-ließ-es-niemals-rückwärts&#34;&gt;ACHTUNG Ließ es niemals rückwärts&lt;/h4&gt;&#xA;&lt;p&gt;Hier ist der Ort um sich Regen auzuschauen, in allen Formen und Farben!&lt;/p&gt;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/superzoom.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/groedn.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;p&gt;Bruuuder wieviel hier Wasser ist?? So rießige Flüsse finde ich irgendwie verrückt.&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/imZugFluss.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Villanders, der Nabel der Welt, trennt zwei Wetterphänomene voneinander.&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/icanchange.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Ich bin immer froh wenns so stark regnet am Matzleinsdorfer Platz, es fühlt sich an als würde der ganze Verkehrs-Schmutz aus der Luft gezogen werden.&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/matzleinsdorf.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Trouble in the message center</title>
-      <link>https://ppage.pilip.org/posts/troubleinthemessagecenter/</link>
-      <pubDate>Tue, 14 Jul 2026 18:52:40 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/troubleinthemessagecenter/</guid>
-      <description>&lt;p&gt;Es kommt schon viel zu lange kein Content mehr hier. Denke jedoch nicht, dass liegt an einem kreativen Burnout des Autors. Nein!&lt;/p&gt;&#xA;&lt;p&gt;Es gibt technische Probleme. Grrrr.&lt;/p&gt;&#xA;&lt;p&gt;Ich wollte nämlich solange mit dem nächsten Post warten, bis der E-Mail Newsletter einsatzbereit ist! Aber naja, ich habe Tage um Tage damit verbracht, bin aber bis jetzt noch nicht im Stande gewesen. Ihr wisst ja: Mit der Technik habe ich es nicht so… (Mein letzter technischer Job endete in einem Rauswurf. Im hohen Bogen.)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Töwinger Dosenbier im Porträt</title>
-      <link>https://ppage.pilip.org/posts/toewingerportraet/</link>
-      <pubDate>Fri, 05 Jun 2026 19:49:20 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/toewingerportraet/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/toewingerportraet/toew_pov.jpg&#34;&#xA;    alt=&#34;pov vom toewinger&#34; width=&#34;100%&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;Blick von Töwinger Dosenbier auf die Welt&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Hallo Herr Töwinger, ich bin hier heute im Auftrag von Times New Roman um dir ein paar Fragen der Leser zu stellen&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;jojo hel passt schun. Nor dorzehl lei. Hou&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Zu allererst: wie kommt es dazu dass du hier liegst? am schönsten Platz im schönsten Dorf der Welt?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Jo hel wert gonz oanfoch sein. Hot mi holt so a Spezialist do oidn gewixt woasche woll. HHeuu&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Stockholm, Yung Lean et al.</title>
-      <link>https://ppage.pilip.org/posts/stockholmleanetal/</link>
-      <pubDate>Wed, 20 May 2026 16:21:08 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/stockholmleanetal/</guid>
-      <description>&lt;p&gt;Ach Stockholm, warum hast du mein Herz gestohlen?&lt;/p&gt;&#xA;&lt;p&gt;Anfang April war ich im Urlaub, unter anderem für 3 Tage in Stockholm. Ich hatte die Stadt schon davor irgendwie cool gefunden, und generell habe ich mich immer schon zu diesen nordischen Ländern hingezogen gefühlt.&#xA;Nun war ich zum ersten Mal dort und Stockholm hat es geschafft meine bereits hohen Erwartungen noch zu übertreffen.&lt;br&gt;&#xA;Euch würde jetzt sicher interessieren: Was ist es? Was daran ist so besonders, so kuhl?&lt;br&gt;&#xA;Naja, genau das ist es eben. Genau das ist die Frage, die nun seit gut anderthalb Monaten in meinem Kopf schwirrt. Nicht zuletzt auch, weil ich ja jetzt höchstwahrscheinlich nach Copenhagen transferieren werde. Copenhagen, was ja critically sehr acclaimed ist und von vielen Menschen als das Non Plus Ultra beschrieben wird. Copenhagen, was ja eigentlich auch eine skandinavische Stadt ist und rein theoretisch nicht so unterschiedlich zu Stockholm sein sollte.&lt;br&gt;&#xA;Für mich war es aber ein Unterschied wie Tag und Dämmerung.&lt;br&gt;&#xA;Copenhagen fühlte sich einfach nur an wie ein etwas anderes Wien.&#xA;Stockholm hingegen&amp;hellip; lass mich etwas aushohlen.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>I Was Accepted By DTU</title>
-      <link>https://ppage.pilip.org/posts/acceptedtodtu/</link>
-      <pubDate>Mon, 18 May 2026 18:22:39 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/acceptedtodtu/</guid>
-      <description>&lt;p&gt;I got accepted for studying at the Danish Technical University. Now what?&lt;br&gt;&#xA;What do i Do?&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Do I accept? Do I decline?&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;Wouldn&amp;rsquo;t it be a crime?&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;To leave this city of mine.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;figure &gt;&#xA;&lt;audio controls preload=&#34;metadata&#34; style=&#34;width: 100%;&#34;&gt;&#xA;&lt;source src=&#34;Wilco_Reservations.mp3&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;&lt;figcaption&gt;Wilco-Reservations&lt;/figcaption&gt;&#xA;&lt;/audio&gt;&#xA;&lt;/figure&gt;</description>
-    </item>
-    <item>
-      <title>Sellastock-Mein Schicksalsberg</title>
-      <link>https://ppage.pilip.org/posts/schicksalsberg/</link>
-      <pubDate>Sun, 03 May 2026 12:14:05 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/schicksalsberg/</guid>
-      <description>&lt;p&gt;Am aller ersten Mai des Jahres 2026 haben sich mein Freund Jakob und ich zum Ziel gesetzt, den Piz Boe – den höchsten Punkt des Sellastocks – zu besteigen.&lt;/p&gt;&#xA;&lt;p&gt;Wir machen uns um 06:15 Uhr auf und dringen mit Jakobs Alfa Romeo vor bis ins tiefste Gröden Tal, wo es nicht mehr weiter geht.&#xA;Von ca. 2000 Meter über dem Meeresspiegel starten wir also los.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/schicksalsberg/startView.jpg&#34;&#xA;    alt=&#34;am fuß des Berges&#34; width=&#34;100%&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Unser erstes Ziel: der Einstieg vom Klettersteig. Jakob suchte extra einen &lt;a href=&#34;https://www.bergsteigen.com/touren/klettersteig/cesare-piazzetta-klettersteig/&#34;&gt;südseitigen Klettersteig&lt;/a&gt; raus, der der zu dieser frühen Jahreszeit schon begehbar ist.&#xA;Am Weg nach oben spielten wir noch am Bächlein und die Welt schien uns noch in Ordnung.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pippos Rate Spiel</title>
-      <link>https://ppage.pilip.org/posts/pipposratespiel/</link>
-      <pubDate>Fri, 24 Apr 2026 00:39:28 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/pipposratespiel/</guid>
-      <description>&lt;p&gt;Rate: was passiert in diesem moment?&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/pipposratespiel/jump.jpeg&#34;&#xA;    alt=&#34;sprung zu schild&#34; width=&#34;100%&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;div class=&#34;quiz&#34;&gt;&#xA;  &lt;p class=&#34;quiz-question&#34;&gt;was passiert&lt;/p&gt;&#xA;  &lt;div class=&#34;quiz-options&#34;&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt weck&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt auf die fresse und werde zum pakistani&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;springt hinauf und ihm geht der arsch auf&lt;/button&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;  .quiz-btn {&#xA;    display: block;&#xA;    margin: 8px 0;&#xA;    padding: 10px 20px;&#xA;    cursor: pointer;&#xA;    border: 2px solid #ccc;&#xA;    border-radius: 6px;&#xA;    background: white;&#xA;    font-size: 1rem;&#xA;    transition: background 0.2s;&#xA;  }&#xA;  .quiz-btn.wrong {&#xA;    background: #e74c3c;&#xA;    border-color: #c0392b;&#xA;    color: white;&#xA;  }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;p&gt;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;i_want_to_fly_away.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;bump_head.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_arround.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;s_man.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;aua.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_gummi.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Langeweile</title>
-      <link>https://ppage.pilip.org/posts/langeweile/</link>
-      <pubDate>Wed, 22 Apr 2026 17:39:56 +0200</pubDate>
-      <guid>https://ppage.pilip.org/posts/langeweile/</guid>
-      <description>&lt;p&gt;Mir ist langweilig!&lt;br&gt;&#xA;Langweilig ist mir.&lt;br&gt;&#xA;I packs garch, i kack in bach!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/langeweile/inTasseSchauen.jpg&#34;&#xA;    alt=&#34;in tasse schauender Fripp&#34; width=&#34;100%&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;p&gt;so sehe ich mich jeden tag beim kaffe und wasser trinken in der tasse gespiegelt:&lt;/p&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Posts on Fripps Page</title>
+		<link>https://ppage.pilip.org/posts/</link>
+		<description>Recent content in Posts on Fripps Page</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Wed, 14 Oct 2026 18:05:19 +0200</lastBuildDate>
+		
+			<atom:link href="https://ppage.pilip.org/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Ich habe einen Virus (Endlich)</title>
+				<link>https://ppage.pilip.org/posts/gettinghacked/</link>
+				<pubDate>Wed, 14 Oct 2026 18:05:19 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/gettinghacked/</guid>
+				<description>&lt;p&gt;Nach jahrelangen rücksichtslosen Gebrauch jeglicher Art von Computern habe ich es nun endlich geschafft mir einen Virus einzufangen.&lt;/p&gt;&#xA;&lt;p&gt;Ja, genau der Computer, der euch diese Website zusendet, hat einen Virus. Gerade im Moment wo ich das hier schreibe, &amp;ldquo;schläft&amp;rdquo; er, weil ich alle prozesse die mir spanisch&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; vorgekommen sind, beendet habe. Die Files sind aber immer noch da und ich weiß Stand jetzt nicht wie der Virus genau gestartet wurde, er kann also jederzeit wieder ausbrechen. Bis zum gutem Schluss werde ich wahrscheinlich einen sauberen Rebuild des gesamten Betriebssystems machen müssen, um komplett safe zu sein. Darauf habe ich aber keine Lust, also vielleicht auch nicht. &lt;br&gt;&#xA;Aber wie komme ich drauf, dass auf meinem Server ein Virus haust, fragt ihr euch? Naja ich wurde von meinem Serveranbieter komplett zugespammed mit Mails dass ich anscheinend teil von &amp;lsquo;Abuse&amp;rsquo; bin???&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>København Außenkorrespondent zu Diensten</title>
+				<link>https://ppage.pilip.org/posts/kbhkorespondence/</link>
+				<pubDate>Sun, 20 Sep 2026 00:00:00 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/kbhkorespondence/</guid>
+				<description>&lt;object data=&#34;kbhTheLetter.pdf&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34;&gt;&#xA;  &lt;p&gt;Here should be a embedded pdf viewer, but somthing went wrong &lt;a href=&#34;kbhTheLetter.pdf&#34;&gt;to the PDF!&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/object&gt;&#xA;&#xA;&lt;p&gt;Gib mir deine Email Adresse :)&#xA;&lt;form id=&#34;email-form&#34;&gt;&#xA;  &lt;input type=&#34;email&#34; id=&#34;email-input&#34; placeholder=&#34;you@example.com&#34; style=&#34;width: 80%&#34; required&gt;&#xA;  &lt;button type=&#34;submit&#34; style=&#34;width: 15%&#34;&gt;Subscribe&lt;/button&gt;&#xA;&lt;/form&gt;&#xA;&lt;div id=&#34;email-status&#34; class=&#34;email-status&#34;&gt;&lt;/div&gt;&#xA;&#xA;&#xA;&lt;script&gt;&#xA;document.getElementById(&#39;email-form&#39;).addEventListener(&#39;submit&#39;, async function (e) {&#xA;  e.preventDefault();&#xA;  const email = document.getElementById(&#39;email-input&#39;).value;&#xA;  const status = document.getElementById(&#39;email-status&#39;);&#xA;&#xA;  status.classList.remove(&#39;show&#39;, &#39;success&#39;, &#39;error&#39;);&#xA;&#xA;  try {&#xA;    const res = await fetch(&#39;/subscribe&#39;, {&#xA;      method: &#39;POST&#39;,&#xA;      headers: { &#39;Content-Type&#39;: &#39;application/json&#39; },&#xA;      body: JSON.stringify({ email })&#xA;    });&#xA;    if (res.ok) {&#xA;      status.textContent = &#39;Kloppet!&#39;;&#xA;      status.classList.add(&#39;show&#39;, &#39;success&#39;);&#xA;      e.target.reset();&#xA;    } else {&#xA;      status.textContent = &#39;Hmm... Hat nicht funktioniert. Ach weißt du was, schreib mir einen Brief!&#39;;&#xA;      status.classList.add(&#39;show&#39;, &#39;error&#39;);&#xA;    }&#xA;  } catch (err) {&#xA;    status.textContent = &#39;Hmm... Hat nicht funktioniert. Ach weißt du was, schreib mir einen Brief!&#39;;&#xA;    status.classList.add(&#39;show&#39;, &#39;error&#39;);&#xA;  }&#xA;});&#xA;&lt;/script&gt;&#xA;&#xA;&lt;style&gt;&#xA;.email-form {&#xA;  display: flex;&#xA;  gap: 0.5rem;&#xA;}&#xA;.email-form input {&#xA;  flex: 1;&#xA;  padding: 0.6rem 0.8rem;&#xA;  border: 1px solid #ccc;&#xA;  border-radius: 6px;&#xA;  font-size: 1rem;&#xA;}&#xA;.email-form button {&#xA;  padding: 0.6rem 1.2rem;&#xA;  border: none;&#xA;  border-radius: 6px;&#xA;  background: #2563eb;&#xA;  color: white;&#xA;  font-weight: 600;&#xA;  cursor: pointer;&#xA;}&#xA;.email-form button:hover {&#xA;  background: #1d4ed8;&#xA;}&#xA;&#xA;.email-status {&#xA;  margin-top: 0.6rem;&#xA;  padding: 0;&#xA;  border-radius: 6px;&#xA;  font-weight: 500;&#xA;  font-size: 0.95rem;&#xA;  max-height: 0;&#xA;  overflow: hidden;&#xA;  opacity: 0;&#xA;  transition: all 0.25s ease;&#xA;}&#xA;.email-status.show {&#xA;  padding: 0.7rem 1rem;&#xA;  max-height: 100px;&#xA;  opacity: 1;&#xA;}&#xA;.email-status.success {&#xA;  background: #dcfce7;&#xA;  color: #166534;&#xA;  border: 1px solid #86efac;&#xA;}&#xA;.email-status.error {&#xA;  background: #fee2e2;&#xA;  color: #991b1b;&#xA;  border: 1px solid #fca5a5;&#xA;}&#xA;&lt;/style&gt;&#xA;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Regen</title>
+				<link>https://ppage.pilip.org/posts/regen/</link>
+				<pubDate>Tue, 28 Jul 2026 20:00:00 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/regen/</guid>
+				<description>&lt;h4 id=&#34;achtung-ließ-es-niemals-rückwärts&#34;&gt;ACHTUNG Ließ es niemals rückwärts&lt;/h4&gt;&#xA;&lt;p&gt;Hier ist der Ort um sich Regen auzuschauen, in allen Formen und Farben!&lt;/p&gt;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/superzoom.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/groedn.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;p&gt;Bruuuder wieviel hier Wasser ist?? So rießige Flüsse finde ich irgendwie verrückt.&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/imZugFluss.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Villanders, der Nabel der Welt, trennt zwei Wetterphänomene voneinander.&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/icanchange.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Ich bin immer froh wenns so stark regnet am Matzleinsdorfer Platz, es fühlt sich an als würde der ganze Verkehrs-Schmutz aus der Luft gezogen werden.&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;https://ppage.pilip.org/blogMedia/matzleinsdorf.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Trouble in the message center</title>
+				<link>https://ppage.pilip.org/posts/troubleinthemessagecenter/</link>
+				<pubDate>Tue, 14 Jul 2026 18:52:40 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/troubleinthemessagecenter/</guid>
+				<description>&lt;p&gt;Es kommt schon viel zu lange kein Content mehr hier. Denke jedoch nicht, dass liegt an einem kreativen Burnout des Autors. Nein!&lt;/p&gt;&#xA;&lt;p&gt;Es gibt technische Probleme. Grrrr.&lt;/p&gt;&#xA;&lt;p&gt;Ich wollte nämlich solange mit dem nächsten Post warten, bis der E-Mail Newsletter einsatzbereit ist! Aber naja, ich habe Tage um Tage damit verbracht, bin aber bis jetzt noch nicht im Stande gewesen. Ihr wisst ja: Mit der Technik habe ich es nicht so… (Mein letzter technischer Job endete in einem Rauswurf. Im hohen Bogen.)&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Töwinger Dosenbier im Porträt</title>
+				<link>https://ppage.pilip.org/posts/toewingerportraet/</link>
+				<pubDate>Fri, 05 Jun 2026 19:49:20 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/toewingerportraet/</guid>
+				<description>&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/toewingerportraet/toew_pov.jpg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;pov vom toewinger&#34; width=&#34;100%&#34;&gt;&lt;figcaption&gt;&#xA;&#x9;&#x9;&#x9;&lt;p&gt;Blick von Töwinger Dosenbier auf die Welt&lt;/p&gt;&#xA;&#x9;&#x9;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Hallo Herr Töwinger, ich bin hier heute im Auftrag von Times New Roman um dir ein paar Fragen der Leser zu stellen&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;jojo hel passt schun. Nor dorzehl lei. Hou&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Zu allererst: wie kommt es dazu dass du hier liegst? am schönsten Platz im schönsten Dorf der Welt?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Jo hel wert gonz oanfoch sein. Hot mi holt so a Spezialist do oidn gewixt woasche woll. HHeuu&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Stockholm, Yung Lean et al.</title>
+				<link>https://ppage.pilip.org/posts/stockholmleanetal/</link>
+				<pubDate>Wed, 20 May 2026 16:21:08 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/stockholmleanetal/</guid>
+				<description>&lt;p&gt;Ach Stockholm, warum hast du mein Herz gestohlen?&lt;/p&gt;&#xA;&lt;p&gt;Anfang April war ich im Urlaub, unter anderem für 3 Tage in Stockholm. Ich hatte die Stadt schon davor irgendwie cool gefunden, und generell habe ich mich immer schon zu diesen nordischen Ländern hingezogen gefühlt.&#xA;Nun war ich zum ersten Mal dort und Stockholm hat es geschafft meine bereits hohen Erwartungen noch zu übertreffen.&lt;br&gt;&#xA;Euch würde jetzt sicher interessieren: Was ist es? Was daran ist so besonders, so kuhl?&lt;br&gt;&#xA;Naja, genau das ist es eben. Genau das ist die Frage, die nun seit gut anderthalb Monaten in meinem Kopf schwirrt. Nicht zuletzt auch, weil ich ja jetzt höchstwahrscheinlich nach Copenhagen transferieren werde. Copenhagen, was ja critically sehr acclaimed ist und von vielen Menschen als das Non Plus Ultra beschrieben wird. Copenhagen, was ja eigentlich auch eine skandinavische Stadt ist und rein theoretisch nicht so unterschiedlich zu Stockholm sein sollte.&lt;br&gt;&#xA;Für mich war es aber ein Unterschied wie Tag und Dämmerung.&lt;br&gt;&#xA;Copenhagen fühlte sich einfach nur an wie ein etwas anderes Wien.&#xA;Stockholm hingegen&amp;hellip; lass mich etwas aushohlen.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>I Was Accepted By DTU</title>
+				<link>https://ppage.pilip.org/posts/acceptedtodtu/</link>
+				<pubDate>Mon, 18 May 2026 18:22:39 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/acceptedtodtu/</guid>
+				<description>&lt;p&gt;I got accepted for studying at the Danish Technical University. Now what?&lt;br&gt;&#xA;What do i Do?&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Do I accept? Do I decline?&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;Wouldn&amp;rsquo;t it be a crime?&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;To leave this city of mine.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;figure &gt;&#xA;&lt;audio controls preload=&#34;metadata&#34; style=&#34;width: 100%;&#34;&gt;&#xA;&lt;source src=&#34;Wilco_Reservations.mp3&#34; type=&#34;audio/mpeg&#34;&gt;&#xA;&lt;figcaption&gt;Wilco-Reservations&lt;/figcaption&gt;&#xA;&lt;/audio&gt;&#xA;&lt;/figure&gt;</description>
+			</item>
+			<item>
+				<title>Sellastock-Mein Schicksalsberg</title>
+				<link>https://ppage.pilip.org/posts/schicksalsberg/</link>
+				<pubDate>Sun, 03 May 2026 12:14:05 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/schicksalsberg/</guid>
+				<description>&lt;p&gt;Am aller ersten Mai des Jahres 2026 haben sich mein Freund Jakob und ich zum Ziel gesetzt, den Piz Boe – den höchsten Punkt des Sellastocks – zu besteigen.&lt;/p&gt;&#xA;&lt;p&gt;Wir machen uns um 06:15 Uhr auf und dringen mit Jakobs Alfa Romeo vor bis ins tiefste Gröden Tal, wo es nicht mehr weiter geht.&#xA;Von ca. 2000 Meter über dem Meeresspiegel starten wir also los.&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/schicksalsberg/startView.jpg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;am fuß des Berges&#34; width=&#34;100%&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Unser erstes Ziel: der Einstieg vom Klettersteig. Jakob suchte extra einen &lt;a href=&#34;https://www.bergsteigen.com/touren/klettersteig/cesare-piazzetta-klettersteig/&#34;&gt;südseitigen Klettersteig&lt;/a&gt; raus, der der zu dieser frühen Jahreszeit schon begehbar ist.&#xA;Am Weg nach oben spielten wir noch am Bächlein und die Welt schien uns noch in Ordnung.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Pippos Rate Spiel</title>
+				<link>https://ppage.pilip.org/posts/pipposratespiel/</link>
+				<pubDate>Fri, 24 Apr 2026 00:39:28 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/pipposratespiel/</guid>
+				<description>&lt;p&gt;Rate: was passiert in diesem moment?&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/pipposratespiel/jump.jpeg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;sprung zu schild&#34; width=&#34;100%&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;div class=&#34;quiz&#34;&gt;&#xA;  &lt;p class=&#34;quiz-question&#34;&gt;was passiert&lt;/p&gt;&#xA;  &lt;div class=&#34;quiz-options&#34;&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt weck&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;fliegt auf die fresse und werde zum pakistani&lt;/button&gt;&#xA;    &#xA;    &lt;button class=&#34;quiz-btn&#34; onclick=&#34;this.classList.add(&#39;wrong&#39;)&#34;&gt;springt hinauf und ihm geht der arsch auf&lt;/button&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;  .quiz-btn {&#xA;    display: block;&#xA;    margin: 8px 0;&#xA;    padding: 10px 20px;&#xA;    cursor: pointer;&#xA;    border: 2px solid #ccc;&#xA;    border-radius: 6px;&#xA;    background: white;&#xA;    font-size: 1rem;&#xA;    transition: background 0.2s;&#xA;  }&#xA;  .quiz-btn.wrong {&#xA;    background: #e74c3c;&#xA;    border-color: #c0392b;&#xA;    color: white;&#xA;  }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;p&gt;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;i_want_to_fly_away.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;bump_head.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_arround.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;s_man.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;aua.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&#xA;&lt;video controls style=&#34;width: 100%; height: auto;&#34;&gt;&#xA;  &lt;source src=&#34;wrap_gummi.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xA;&lt;/video&gt;&#xA;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Langeweile</title>
+				<link>https://ppage.pilip.org/posts/langeweile/</link>
+				<pubDate>Wed, 22 Apr 2026 17:39:56 +0200</pubDate>
+				<guid>https://ppage.pilip.org/posts/langeweile/</guid>
+				<description>&lt;p&gt;Mir ist langweilig!&lt;br&gt;&#xA;Langweilig ist mir.&lt;br&gt;&#xA;I packs garch, i kack in bach!&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ppage.pilip.org/posts/langeweile/inTasseSchauen.jpg&#34;&#xA;&#x9;&#x9;&#x9;alt=&#34;in tasse schauender Fripp&#34; width=&#34;100%&#34;&gt;&lt;figcaption&gt;&#xA;&#x9;&#x9;&#x9;&lt;p&gt;so sehe ich mich jeden tag beim kaffe und wasser trinken in der tasse gespiegelt:&lt;/p&gt;&#xA;&#x9;&#x9;&lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+			</item>
+	</channel>
 </rss>
